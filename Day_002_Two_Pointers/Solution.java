@@ -1,4 +1,4 @@
-package Day_002_Two_Sum;
+package Day_002_Two_Pointers;
 
 class Solution {
     public int removeDuplicates(int[] nums) {
