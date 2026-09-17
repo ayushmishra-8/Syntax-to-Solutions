@@ -4,26 +4,24 @@ class Solution {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        // Har row ko check karo
-        for (int i = 0; i < rows; i++) {
+        int left = 0;
+        int right = rows * cols - 1;
 
-            int left = 0;
-            int right = cols - 1;
+        while (left <= right) {
 
-            // Binary Search in current row
-            while (left <= right) {
+            int mid = left + (right - left) / 2;
 
-                int mid = left + (right - left) / 2;
+            int row = mid / cols;
+            int col = mid % cols;
 
-                if (matrix[i][mid] == target) {
-                    return true;
-                }
-                else if (matrix[i][mid] < target) {
-                    left = mid + 1;
-                }
-                else {
-                    right = mid - 1;
-                }
+            if (matrix[row][col] == target) {
+                return true;
+            }
+
+            if (matrix[row][col] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
 
