@@ -49,4 +49,4 @@ LeetCode
 
 ## Key Takeaway
 
-Sorting both arrays made it possible to use two pointers and efficiently find the common elements while correctly handling duplicates.
+Sorting both arrays made it possible to use two pointers and efficiently find the common elements while correctly handling duplicates.k
