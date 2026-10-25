@@ -20,6 +20,7 @@
 - **Time Complexity:** O(n) — Each pointer traverses the string at most once.
 - **Space Complexity:** O(n) — The character array stores the string's characters.
 
-## Key Learning
+## Key Learningg
 
 Practised the two-pointer technique to reverse only the vowels while keeping all other characters in their original positions.
+Author: Ayush Mishra
